@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Weather Finder 🌦️
 
-Currently, two official plugins are available:
+A web application to find real-time weather information using the Weather API. Built with **TypeScript**, **JavaScript**, **React**, **Vite**, **HTML**, and **CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- Fetches real-time weather data.
+- User-friendly interface.
+- Responsive design for all screen sizes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
+- **Frontend**: React, TypeScript, JavaScript, Vite, HTML, CSS
+- **API**: [Weather API](https://www.weatherapi.com)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📸 Demo
+![Demo Screenshot](path_to_screenshot)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🧑‍💻 How to Run the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/weather-finder.git
+   cd weather-finder
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and visit:
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## ⚙️ Configuration
+1. Get your API key from [Weather API](https://www.weatherapi.com).
+2. Create a `.env` file in the root and add:
+   ```env
+   VITE_WEATHER_API_KEY=your_api_key
+   ```
+
+---
+
+## 🤝 Contributing
+Feel free to fork this project, submit issues, or send pull requests!
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.  
